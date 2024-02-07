@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --clr-primaty: #78e1e8;
+  --clr-desc: #b8b8b8;
+  --clr-white: #ffffff;
+  --bg-body: #020611;
+  --clr-footer: #000000;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+}
+body,
+button {
+  font-family: "Rubik", sans-serif;
+}
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;600;700;900&family=Rubik&display=swap");
+

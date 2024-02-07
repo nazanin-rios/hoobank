@@ -1,4 +1,4 @@
-* {
+*,*::after,*::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,10 +15,7 @@
   --clr-desc: #b8b8b8;
   --clr-white: #ffffff;
   --bg-body: #020611;
-  --circle-bg1: #455d8273;
-  --circle-bg2: #aac0dfea;
-  --circle-bg3: #2d3039;
-  --clr-none: transparent;
+  --clr-footer:#000000;
 }
 html {
   font-size: 62.5%;
@@ -222,7 +219,7 @@ nav > i {
   right: 0px;
   width: 400px;
   height: 600px;
-  background-color: var(--circle-bg1);
+  background-color: #455d8273;
   filter: blur(200px);
   border-radius: 40%;
   display: none;
@@ -234,7 +231,7 @@ nav > i {
   right: 50px;
   width: 250px;
   height: 300px;
-  background-color: var(--circle-bg2);
+  background-color: #aac0dfea;
   filter: blur(300px);
   border-radius: 50%;
   display: none;
@@ -246,7 +243,7 @@ nav > i {
   left: -50px;
   width: 400px;
   height: 400px;
-  background-color: var(--circle-bg3);
+  background-color: #2d3039;
   filter: blur(120px);
   border-radius: 50%;
   display: none;
@@ -600,7 +597,7 @@ nav > i {
 .control-item1-2 > button {
   color: var(--clr-primaty);
   border: 1px solid var(--clr-primaty);
-  background-color: var(--clr-none);
+  background-color: transparent;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -816,19 +813,19 @@ nav > i {
   height: 230px;
   background: radial-gradient(
     circle,
-    var(--clr-none) 20%,
-    var(--circle-bg2) 20%,
-    var(--circle-bg2) 22%,
-    var(--clr-none) 22%,
-    var(--clr-none) 45%,
-    var(--circle-bg2) 45%,
-    var(--circle-bg2) 47%,
-    var(--clr-none) 47%,
-    var(--clr-none) 65%,
-    var(--circle-bg2) 65%,
-    var(--circle-bg2) 67%,
-    var(--clr-none) 67%,
-    var(--clr-none) 100%
+    transparent 20%,
+    #c1dee0 20%,
+    #c1dee0 22%,
+    transparent 22%,
+    transparent 45%,
+    #c1dee0 45%,
+    #c1dee0 47%,
+    transparent 47%,
+    transparent 65%,
+    #c1dee0 65%,
+    #c1dee0 67%,
+    transparent 67%,
+    transparent 100%
   );
 }
 /* items  */
@@ -1248,7 +1245,7 @@ nav > i {
 /* footer  */
 footer {
   height: 900px;
-  background-color: black;
+  background-color: var(--clr-footer);
   padding-top: 50px;
 }
 .footer-menu {
