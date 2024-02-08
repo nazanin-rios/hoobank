@@ -20,6 +20,8 @@ html {
 }
 body {
   font-size: 1.4rem;
+  background-color: var(--bg-body);
+  /* background-image: url(../img/bggg.jpg); */
 }
 body,
 button {
@@ -29,3 +31,149 @@ button {
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;600;700;900&family=Rubik&display=swap");
 
+
+.login {
+  background-color: #ffffff;
+  position: relative;
+  width: 95%;
+  /* backdrop-filter: blur(50px); */
+  border-radius: 20px 0 20px 20px;
+  margin: 100px auto;
+  /* border: 0.5px solid var(--clr-white); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--clr-footer);
+}
+.login > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--clr-desc);
+  border-radius: 0 0 0 30px;
+  width: 30px;
+  height: 30px;
+}
+.login > a > i {
+  font-size: 2rem;
+  color: var(--clr-footer);
+  padding: 3px 0 0 8px;
+}
+.login > a:hover i {
+  color: #e61212;
+}
+.login > img {
+  display: none;
+  width: 200px;
+}
+form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+}
+.user,
+.pass {
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+}
+.user > input,
+.pass > input {
+  background-color: #e6e5e5;
+  /* border: 0.5px solid var(--clr-white); */
+  /* background-color: transparent; */
+  height: 40px;
+  width: 90%;
+  border-radius: 20px;
+  z-index: 1;
+  color: var(--clr-footer);
+  padding-left: 70px;
+  padding-right: 32px;
+  border: 0;
+  outline: none;
+  margin: 0 5%;
+}
+.user > label,
+.pass > label {
+  font-size: 1.2rem;
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  left: 8%;
+  transition: all 0.3s;
+  color: var(--clr-desc);
+}
+.user > i,
+.pass > i {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  top: 12px;
+  transition: all 0.3s;
+  color: var(--clr-desc);
+}
+input:focus ~ label {
+  background-color: var(--clr-primaty);
+  color: #000000;
+  border-radius: 15px;
+  padding: 3px 6px;
+  top: -10px;
+  left: 10%;
+}
+input:focus ~ i {
+  color: var(--clr-primaty);
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 90%;
+  color: var(--clr-footer);
+}
+.box a {
+  color: var(--clr-primaty);
+  margin: 10px 0;
+}
+form > button {
+  width: 90%;
+  height: 40px;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--clr-primaty);
+  margin: 20px 0;
+}
+form > p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--clr-footer);
+}
+form > p > a {
+  color: var(--clr-primaty);
+}
+@media screen and (min-width: 576px) {
+  form {
+    width: 350px;
+  }
+  .login > img {
+    display: block;
+  }
+  .login {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 767px) {
+  .login{
+    width: 700px;
+  }
+}

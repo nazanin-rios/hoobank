@@ -1,4 +1,6 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +17,7 @@
   --clr-desc: #b8b8b8;
   --clr-white: #ffffff;
   --bg-body: #020611;
-  --clr-footer:#000000;
+  --clr-footer: #000000;
 }
 html {
   font-size: 62.5%;
@@ -59,6 +61,8 @@ nav > i {
 .nav-bar > li {
   padding: 0 15px;
   cursor: pointer;
+  margin-bottom: 5px;
+
 }
 .nav-bar > li > a {
   transition: all 0.2s;
@@ -91,6 +95,15 @@ nav > i {
 }
 #hamburger:hover {
   color: var(--clr-primaty);
+}
+#login::before {
+  width: 0%;
+}
+#login{
+  background-color: var(--clr-primaty);
+  border-radius: 15px;
+  padding: 8px 12px;
+  color: var(--clr-footer);
 }
 /* end */
 
@@ -364,9 +377,9 @@ nav > i {
     width: 350px;
   }
   #get-start1 > img {
-    left: 320px;
+    left: 420px;
     display: block;
-    top: 60px;
+    top: 80px;
   }
   .circle11 {
     display: block;

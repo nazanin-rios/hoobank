@@ -5,10 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
     <link rel="stylesheet" href="./css/login.css" />
+    <!-- link icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <main>
+      <section data-aos="zoom-in">
+        <div class="login">
+          <img src="./img/bank.svg" alt="Bank" />
+          <a href="./index.html"><i class="bx bx-x"></i></a>
+          <form action="">
+            <h1>Login</h1>
+            <div class="user">
+              <input type="text" name="" id="user" required />
+              <label class="label" for="user">username:</label>
+              <i class="bx bxs-user"></i>
+            </div>
 
+            <div class="pass">
+              <input type="password" name="" id="pass" required />
+              <label for="pass">password:</label>
+              <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="box">
+              <span class="checkbox">
+                <label for="check">remember me</label>
+                <input type="checkbox" name="" id="check" />
+              </span>
+              <a href="#">forget password</a>
+            </div>
+
+            <button type="submit">Login</button>
+            <p>don't have an account?<a href="#"> Register</a></p>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
