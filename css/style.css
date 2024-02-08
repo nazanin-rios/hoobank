@@ -37,6 +37,19 @@ button {
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;600;700;900&family=Rubik&display=swap");
 /* font-family: 'Archivo Black', sans-serif; */
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #346268;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #25464b;
+}
 /* header */
 header > nav {
   height: 70px;
