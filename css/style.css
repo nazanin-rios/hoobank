@@ -145,7 +145,7 @@ nav > i {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  margin: 0;
+  margin: 10px auto;
 }
 .discount > img {
   padding: 5px;
@@ -445,24 +445,21 @@ nav > i {
 /* btn */
 .btn-businees {
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   width: 120px;
   height: 44px;
-  font-size: var(--size, 1.5rem);
-  font-family: "Segoe UI", system-ui, sans-serif;
   transition: 0.8s;
-  background-size: 280% auto;
+  background-size: 300%;
   background-image: linear-gradient(
     325deg,
-    hsla(217 100% 56% / 1) 0%,
-    hsla(194 100% 69% / 1) 55%,
-    hsla(217 100% 56% / 1) 90%
+    #428aff 0%,
+    rgb(139, 232, 255) 55%,
+    #428aff 90%
   );
   border: none;
   border-radius: 0.5em;
-  color: hsla(360 100% 100% / 1);
-  box-shadow: 0px 0px 20px #47b8ff80, 0px 5px 5px -1px #3a7de940,
-    inset 4px 4px 8px #afe6ff80, inset -4px -4px 8px #135fd859;
+  color: var(--clr-white);
+  box-shadow: 0 0 10px #61daff91, 0 0 50px #61daff91;
 }
 .btn-businees:hover {
   background-position: right top;
@@ -472,11 +469,6 @@ nav > i {
 }
 .btn-businees > a {
   color: var(--clr-white);
-}
-@media (prefers-reduced-motion: reduce) {
-  .btn-donate {
-    transition: linear;
-  }
 }
 /* businees-item */
 .businees-items {
