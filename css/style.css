@@ -451,6 +451,9 @@ nav > i {
 .btn-businees:active {
   transform: scale(0.9);
 }
+.btn-businees>a{
+  color: var(--clr-white);
+}
 @media (prefers-reduced-motion: reduce) {
   .btn-donate {
     transition: linear;
