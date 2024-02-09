@@ -388,10 +388,11 @@ nav > i {
 
 @media screen and (min-width: 992px) {
   .home-page {
-    height: 500px;
+    height: 520px;
   }
   .pic-home-page {
     margin-right: 100px;
+    margin-bottom: 70px;
   }
   .home-page-desc {
     margin: 0 0 0 100px;
@@ -586,7 +587,7 @@ nav > i {
   position: relative;
 }
 .control-item1 {
-  width: 160px;
+  width: 150px;
   height: 150px;
   border-radius: 10px;
   background: linear-gradient(to right, #474b53, #191820);
